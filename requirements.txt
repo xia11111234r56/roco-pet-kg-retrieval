@@ -1,0 +1,9 @@
+flask==3.0.0
+whoosh==2.7.4
+jieba==0.42.1
+networkx==3.2.1
+beautifulsoup4==4.12.2
+lxml==4.9.3
+selenium==4.15.2
+wordcloud==1.9.2
+matplotlib==3.8.2

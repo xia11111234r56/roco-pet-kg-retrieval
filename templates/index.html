@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>洛克王国 · 精灵信息检索系统</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <header class="system-header">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <div class="header-logo">
+                <span class="logo-icon">⚜️</span>
+            </div>
+            <div class="header-text">
+                <h1 class="header-title">洛克王国</h1>
+                <p class="header-subtitle">精灵信息检索系统</p>
+            </div>
+            <div class="header-deco">
+                <span class="deco-star">✦</span>
+                <span class="deco-star">✦</span>
+                <span class="deco-star">✦</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-container">
+        <nav class="nav-bar">
+            <button class="nav-btn active" data-page="page1">克制关系</button>
+            <button class="nav-btn" data-page="page2">综合检索</button>
+            <button class="nav-btn" data-page="page3">蛋组查询</button>
+            <button class="nav-btn" data-page="page4">全貌图谱</button>
+        </nav>
+
+        <div class="page-container">
+            <div id="page1" class="page active">
+                <div class="type-search-bar">
+                    <span class="search-label">我想查询</span>
+                    <input type="text" id="type-search-input" class="search-input" placeholder="输入精灵名称..." autocomplete="off">
+                    <div id="type-suggestions" class="suggestions-dropdown"></div>
+                    <span class="search-label">精灵的克制关系</span>
+                    <button id="type-search-btn" class="search-btn">查询</button>
+                    <button type="button" id="clear-type-search" class="search-clear-btn" title="清空">✕</button>
+                </div>
+                <div class="graph-container">
+                    <div class="graph-panel" id="left-graph-panel">
+                        <div class="panel-title">精灵克制关系图谱</div>
+                        <svg id="left-graph-svg"></svg>
+                        <div class="graph-legend">
+                            <span class="legend-item"><span class="legend-color strong"></span> 克制</span>
+                            <span class="legend-item"><span class="legend-color weak"></span> 被克制</span>
+                            <span class="legend-item"><span class="legend-color immune"></span> 免疫</span>
+                        </div>
+                    </div>
+                    <div class="graph-panel" id="right-graph-panel">
+                        <div class="panel-title">属性精灵关系图谱 <span id="right-panel-subtitle"></span></div>
+                        <svg id="right-graph-svg"></svg>
+                        <div class="graph-legend">
+                            <span class="legend-item"><span class="legend-color strong"></span> 克制</span>
+                            <span class="legend-item"><span class="legend-color weak"></span> 被克制</span>
+                            <span class="legend-item"><span class="legend-color same-type"></span> 同属性精灵</span>
+                        </div>
+                    </div>
+                    <div class="info-panel" id="info-panel">
+                        <div class="panel-title">关系摘要</div>
+                        <div id="info-panel-content" class="info-panel-content">
+                            <p class="info-placeholder">输入精灵名称查询克制关系</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page2" class="page">
+                <div class="search-tabs">
+                    <button class="search-tab-btn active" data-tab="tab-name">名称检索</button>
+                    <button class="search-tab-btn" data-tab="tab-type">系别筛选</button>
+                </div>
+
+                <div id="tab-name" class="search-tab-content active">
+                    <div class="search-row">
+                        <input type="text" id="name-search-input" class="search-input wide" placeholder="输入精灵名称...">
+                        <button id="name-search-btn" class="search-btn">搜索</button>
+                        <button type="button" id="clear-name-search" class="search-clear-btn" title="清空">✕</button>
+                    </div>
+                    <div id="name-results" class="results-grid"></div>
+                </div>
+
+                <div id="tab-type" class="search-tab-content">
+                    <div class="type-filter-grid" id="type-checkboxes"></div>
+                    <div id="type-results" class="results-grid"></div>
+                </div>
+            </div>
+
+            <div id="page3" class="page">
+                <div class="egg-page-layout">
+                    <div class="egg-left-panel">
+                        <div class="egg-search-section">
+                            <div class="egg-search-bar">
+                                <input type="text" id="egg-search-input" class="search-input wide" placeholder="输入精灵名称，查询能和什么精灵生蛋..." autocomplete="off">
+                                <div id="egg-suggestions" class="suggestions-dropdown"></div>
+                                <button id="egg-search-btn" class="search-btn">查询</button>
+                                <button type="button" id="clear-egg-search" class="search-clear-btn" title="清空">✕</button>
+                            </div>
+                            <div id="egg-search-info" class="egg-search-info"></div>
+                        </div>
+                        <div class="egg-results-section" id="egg-breedable-results">
+                            <div class="empty-hint">请输入精灵名称查询可生蛋精灵</div>
+                        </div>
+                    </div>
+                    <div class="egg-right-panel">
+                        <div class="egg-group-sidebar-panel">
+                            <div class="panel-title">蛋组分类</div>
+                            <div class="egg-group-sidebar" id="egg-group-list"></div>
+                        </div>
+                        <div class="egg-group-content-panel" id="egg-group-content">
+                            <div class="panel-title" id="egg-group-title">请选择一个蛋组查看精灵</div>
+                            <div id="egg-group-results" class="results-grid"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page4" class="page kg-page">
+                <iframe id="kg-iframe" src="/knowledge-graph" class="kg-iframe"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="pet-detail-modal" id="pet-detail-modal">
+        <div class="pet-detail-overlay"></div>
+        <div class="pet-detail-card">
+            <button class="pet-detail-close" id="pet-detail-close">&times;</button>
+            <div class="pet-detail-content" id="pet-detail-content"></div>
+        </div>
+    </div>
+
+    <footer class="system-footer">
+        <span>洛克王国精灵信息检索系统 · 数据来源：洛克王国官方</span>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

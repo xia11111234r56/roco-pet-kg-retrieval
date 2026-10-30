@@ -1,0 +1,1022 @@
+[
+    {
+        "id": "NO.001",
+        "name": "迪莫",
+        "types": ["光系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.001_迪莫.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/迪莫",
+        "traits": ["光芒"],
+        "skills": [
+            {"name": "闪光", "type": "光系", "power": 40},
+            {"name": "光之刃", "type": "光系", "power": 80},
+            {"name": "圣光裁决", "type": "光系", "power": 100}
+        ],
+        "stats": {"hp": 80, "attack": 90, "defense": 70, "sp_attack": 100, "sp_defense": 80, "speed": 95},
+        "evolves_to": null,
+        "evolves_from": null,
+        "egg_group": "未发现",
+        "description": "梦想的光之精灵，拥有净化一切黑暗的力量。"
+    },
+    {
+        "id": "NO.002",
+        "name": "喵喵",
+        "types": ["草系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.002_喵喵.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/喵喵",
+        "traits": ["茂盛"],
+        "skills": [
+            {"name": "藤鞭", "type": "草系", "power": 45},
+            {"name": "飞叶快刀", "type": "草系", "power": 55}
+        ],
+        "stats": {"hp": 45, "attack": 49, "defense": 49, "sp_attack": 65, "sp_defense": 55, "speed": 45},
+        "evolves_to": "喵呜",
+        "evolves_from": null,
+        "egg_group": "植物",
+        "description": "温顺的草系精灵，头顶长着一片嫩绿的叶子。"
+    },
+    {
+        "id": "NO.003",
+        "name": "喵呜",
+        "types": ["草系"],
+        "evolution_stage": "Ⅱ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.003_喵呜.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/喵呜",
+        "traits": ["茂盛"],
+        "skills": [
+            {"name": "藤鞭", "type": "草系", "power": 45},
+            {"name": "飞叶快刀", "type": "草系", "power": 55},
+            {"name": "花瓣舞", "type": "草系", "power": 90}
+        ],
+        "stats": {"hp": 60, "attack": 62, "defense": 63, "sp_attack": 80, "sp_defense": 70, "speed": 60},
+        "evolves_to": "魔力猫",
+        "evolves_from": "喵喵",
+        "egg_group": "植物",
+        "description": "喵喵进化后的形态，花朵开始绽放。"
+    },
+    {
+        "id": "NO.004",
+        "name": "魔力猫",
+        "types": ["草系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.004_魔力猫.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/魔力猫",
+        "traits": ["茂盛", "自然治愈"],
+        "skills": [
+            {"name": "藤鞭", "type": "草系", "power": 45},
+            {"name": "飞叶快刀", "type": "草系", "power": 55},
+            {"name": "花瓣舞", "type": "草系", "power": 90},
+            {"name": "阳光烈焰", "type": "草系", "power": 120}
+        ],
+        "stats": {"hp": 80, "attack": 82, "defense": 83, "sp_attack": 100, "sp_defense": 90, "speed": 80},
+        "evolves_to": null,
+        "evolves_from": "喵呜",
+        "egg_group": "植物",
+        "description": "喵呜的最终进化形态，拥有强大的自然之力。"
+    },
+    {
+        "id": "NO.005",
+        "name": "火花",
+        "types": ["火系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.005_火花.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/火花",
+        "traits": ["猛火"],
+        "skills": [
+            {"name": "火花", "type": "火系", "power": 40},
+            {"name": "火焰喷射", "type": "火系", "power": 90}
+        ],
+        "stats": {"hp": 39, "attack": 52, "defense": 43, "sp_attack": 60, "sp_defense": 50, "speed": 65},
+        "evolves_to": "焰火",
+        "evolves_from": null,
+        "egg_group": "怪兽",
+        "description": "体内燃烧着永不熄灭的火焰，性格热情奔放。"
+    },
+    {
+        "id": "NO.006",
+        "name": "焰火",
+        "types": ["火系"],
+        "evolution_stage": "Ⅱ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.006_焰火.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/焰火",
+        "traits": ["猛火"],
+        "skills": [
+            {"name": "火花", "type": "火系", "power": 40},
+            {"name": "火焰喷射", "type": "火系", "power": 90},
+            {"name": "火焰漩涡", "type": "火系", "power": 70}
+        ],
+        "stats": {"hp": 58, "attack": 64, "defense": 58, "sp_attack": 80, "sp_defense": 65, "speed": 80},
+        "evolves_to": "火神",
+        "evolves_from": "火花",
+        "egg_group": "怪兽",
+        "description": "火花进化后的形态，火焰更加旺盛。"
+    },
+    {
+        "id": "NO.007",
+        "name": "火神",
+        "types": ["火系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.007_火神.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/火神",
+        "traits": ["猛火", "火焰身躯"],
+        "skills": [
+            {"name": "火花", "type": "火系", "power": 40},
+            {"name": "火焰喷射", "type": "火系", "power": 90},
+            {"name": "火焰漩涡", "type": "火系", "power": 70},
+            {"name": "大字爆炎", "type": "火系", "power": 110}
+        ],
+        "stats": {"hp": 78, "attack": 84, "defense": 78, "sp_attack": 109, "sp_defense": 85, "speed": 100},
+        "evolves_to": null,
+        "evolves_from": "焰火",
+        "egg_group": "怪兽",
+        "description": "焰火的最终进化形态，火焰温度可达数千度。"
+    },
+    {
+        "id": "NO.008",
+        "name": "水蓝蓝",
+        "types": ["水系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.008_水蓝蓝.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/水蓝蓝",
+        "traits": ["激流"],
+        "skills": [
+            {"name": "水枪", "type": "水系", "power": 40},
+            {"name": "水炮", "type": "水系", "power": 110}
+        ],
+        "stats": {"hp": 44, "attack": 48, "defense": 65, "sp_attack": 50, "sp_defense": 64, "speed": 43},
+        "evolves_to": "波波拉",
+        "evolves_from": null,
+        "egg_group": "水中1",
+        "description": "温柔的水系精灵，能够自由操控水流。"
+    },
+    {
+        "id": "NO.009",
+        "name": "波波拉",
+        "types": ["水系"],
+        "evolution_stage": "Ⅱ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.009_波波拉.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/波波拉",
+        "traits": ["激流"],
+        "skills": [
+            {"name": "水枪", "type": "水系", "power": 40},
+            {"name": "水炮", "type": "水系", "power": 110},
+            {"name": "潮旋", "type": "水系", "power": 65}
+        ],
+        "stats": {"hp": 59, "attack": 63, "defense": 80, "sp_attack": 65, "sp_defense": 80, "speed": 58},
+        "evolves_to": "水灵",
+        "evolves_from": "水蓝蓝",
+        "egg_group": "水中1",
+        "description": "水蓝蓝进化后的形态，水流控制力大幅提升。"
+    },
+    {
+        "id": "NO.010",
+        "name": "水灵",
+        "types": ["水系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.010_水灵.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/水灵",
+        "traits": ["激流", "水之庇护"],
+        "skills": [
+            {"name": "水枪", "type": "水系", "power": 40},
+            {"name": "水炮", "type": "水系", "power": 110},
+            {"name": "潮旋", "type": "水系", "power": 65},
+            {"name": "水之誓约", "type": "水系", "power": 80}
+        ],
+        "stats": {"hp": 79, "attack": 83, "defense": 100, "sp_attack": 85, "sp_defense": 105, "speed": 78},
+        "evolves_to": null,
+        "evolves_from": "波波拉",
+        "egg_group": "水中1",
+        "description": "波波拉的最终进化形态，是水中的王者。"
+    },
+    {
+        "id": "NO.011",
+        "name": "电击怪",
+        "types": ["电系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.011_电击怪.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/电击怪",
+        "traits": ["静电"],
+        "skills": [
+            {"name": "电击", "type": "电系", "power": 40},
+            {"name": "十万伏特", "type": "电系", "power": 90}
+        ],
+        "stats": {"hp": 35, "attack": 55, "defense": 40, "sp_attack": 50, "sp_defense": 45, "speed": 90},
+        "evolves_to": "电击兽",
+        "evolves_from": null,
+        "egg_group": "人形",
+        "description": "活泼可爱的电系精灵，脸颊两侧有小小的电气袋。"
+    },
+    {
+        "id": "NO.012",
+        "name": "电击兽",
+        "types": ["电系"],
+        "evolution_stage": "Ⅱ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.012_电击兽.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/电击兽",
+        "traits": ["静电"],
+        "skills": [
+            {"name": "电击", "type": "电系", "power": 40},
+            {"name": "十万伏特", "type": "电系", "power": 90},
+            {"name": "打雷", "type": "电系", "power": 110}
+        ],
+        "stats": {"hp": 55, "attack": 75, "defense": 55, "sp_attack": 70, "sp_defense": 60, "speed": 105},
+        "evolves_to": "雷暴兽",
+        "evolves_from": "电击怪",
+        "egg_group": "人形",
+        "description": "电击怪进化后的形态，电力大幅增强。"
+    },
+    {
+        "id": "NO.013",
+        "name": "雷暴兽",
+        "types": ["电系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.013_雷暴兽.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/雷暴兽",
+        "traits": ["静电", "避雷针"],
+        "skills": [
+            {"name": "电击", "type": "电系", "power": 40},
+            {"name": "十万伏特", "type": "电系", "power": 90},
+            {"name": "打雷", "type": "电系", "power": 110},
+            {"name": "电磁炮", "type": "电系", "power": 120}
+        ],
+        "stats": {"hp": 75, "attack": 95, "defense": 70, "sp_attack": 90, "sp_defense": 75, "speed": 130},
+        "evolves_to": null,
+        "evolves_from": "电击兽",
+        "egg_group": "人形",
+        "description": "电击兽的最终进化形态，能够操控百万伏特的雷电。"
+    },
+    {
+        "id": "NO.014",
+        "name": "雪娃娃",
+        "types": ["冰系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.014_雪娃娃.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/雪娃娃",
+        "traits": ["冰冻身躯"],
+        "skills": [
+            {"name": "冰冻光束", "type": "冰系", "power": 90},
+            {"name": "冰砾", "type": "冰系", "power": 40}
+        ],
+        "stats": {"hp": 50, "attack": 50, "defense": 50, "sp_attack": 60, "sp_defense": 55, "speed": 50},
+        "evolves_to": "冰晶精灵",
+        "evolves_from": null,
+        "egg_group": "矿物",
+        "description": "由纯净冰雪构成的精灵，性格天真可爱。"
+    },
+    {
+        "id": "NO.015",
+        "name": "冰晶精灵",
+        "types": ["冰系"],
+        "evolution_stage": "Ⅱ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.015_冰晶精灵.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/冰晶精灵",
+        "traits": ["冰冻身躯"],
+        "skills": [
+            {"name": "冰冻光束", "type": "冰系", "power": 90},
+            {"name": "冰砾", "type": "冰系", "power": 40},
+            {"name": "暴风雪", "type": "冰系", "power": 110}
+        ],
+        "stats": {"hp": 65, "attack": 65, "defense": 65, "sp_attack": 80, "sp_defense": 75, "speed": 65},
+        "evolves_to": "冰霜女王",
+        "evolves_from": "雪娃娃",
+        "egg_group": "矿物",
+        "description": "雪娃娃进化后的形态，冰晶更加璀璨。"
+    },
+    {
+        "id": "NO.016",
+        "name": "冰霜女王",
+        "types": ["冰系", "超能力系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.016_冰霜女王.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/冰霜女王",
+        "traits": ["冰冻身躯", "心灵感应"],
+        "skills": [
+            {"name": "冰冻光束", "type": "冰系", "power": 90},
+            {"name": "冰砾", "type": "冰系", "power": 40},
+            {"name": "暴风雪", "type": "冰系", "power": 110},
+            {"name": "精神强念", "type": "超能力系", "power": 90}
+        ],
+        "stats": {"hp": 80, "attack": 80, "defense": 85, "sp_attack": 110, "sp_defense": 100, "speed": 85},
+        "evolves_to": null,
+        "evolves_from": "冰晶精灵",
+        "egg_group": "矿物",
+        "description": "冰晶精灵的最终进化形态，拥有冰与心灵的双重力量。"
+    },
+    {
+        "id": "NO.017",
+        "name": "小石灵",
+        "types": ["岩石系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.017_小石灵.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/小石灵",
+        "traits": ["结实"],
+        "skills": [
+            {"name": "岩石封锁", "type": "岩石系", "power": 60},
+            {"name": "落石", "type": "岩石系", "power": 50}
+        ],
+        "stats": {"hp": 60, "attack": 70, "defense": 90, "sp_attack": 30, "sp_defense": 40, "speed": 25},
+        "evolves_to": "岩石巨人",
+        "evolves_from": null,
+        "egg_group": "矿物",
+        "description": "由坚硬岩石构成的小精灵，防御力惊人。"
+    },
+    {
+        "id": "NO.018",
+        "name": "岩石巨人",
+        "types": ["岩石系", "格斗系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.018_岩石巨人.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/岩石巨人",
+        "traits": ["结实", "大力士"],
+        "skills": [
+            {"name": "岩石封锁", "type": "岩石系", "power": 60},
+            {"name": "落石", "type": "岩石系", "power": 50},
+            {"name": "近身战", "type": "格斗系", "power": 120},
+            {"name": "岩崩", "type": "岩石系", "power": 75}
+        ],
+        "stats": {"hp": 100, "attack": 120, "defense": 130, "sp_attack": 50, "sp_defense": 60, "speed": 30},
+        "evolves_to": null,
+        "evolves_from": "小石灵",
+        "egg_group": "矿物",
+        "description": "小石灵的最终进化形态，拥有无与伦比的防御力。"
+    },
+    {
+        "id": "NO.019",
+        "name": "幽灵娃娃",
+        "types": ["幽灵系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.019_幽灵娃娃.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/幽灵娃娃",
+        "traits": ["漂浮"],
+        "skills": [
+            {"name": "暗影球", "type": "幽灵系", "power": 80},
+            {"name": "黑夜魔影", "type": "幽灵系", "power": 70}
+        ],
+        "stats": {"hp": 30, "attack": 25, "defense": 35, "sp_attack": 70, "sp_defense": 60, "speed": 70},
+        "evolves_to": "暗影幽灵",
+        "evolves_from": null,
+        "egg_group": "不定形",
+        "description": "戴着大大帽兜的神秘精灵，性格胆小但善良。"
+    },
+    {
+        "id": "NO.020",
+        "name": "暗影幽灵",
+        "types": ["幽灵系", "恶系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.020_暗影幽灵.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/暗影幽灵",
+        "traits": ["漂浮", "诅咒身躯", "暗影庇护"],
+        "skills": [
+            {"name": "暗影球", "type": "幽灵系", "power": 80},
+            {"name": "黑夜魔影", "type": "幽灵系", "power": 70},
+            {"name": "暗影爪", "type": "幽灵系", "power": 70},
+            {"name": "恶之波动", "type": "恶系", "power": 80}
+        ],
+        "stats": {"hp": 75, "attack": 80, "defense": 70, "sp_attack": 110, "sp_defense": 90, "speed": 120},
+        "evolves_to": null,
+        "evolves_from": "幽灵娃娃",
+        "egg_group": "不定形",
+        "description": "幽灵娃娃的最终进化形态，掌控暗影与邪恶之力。"
+    },
+    {
+        "id": "NO.021",
+        "name": "小独角兽",
+        "types": ["妖精系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.021_小独角兽.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/小独角兽",
+        "traits": ["魔法防御"],
+        "skills": [
+            {"name": "妖精之风", "type": "妖精系", "power": 40},
+            {"name": "魔法闪耀", "type": "妖精系", "power": 80}
+        ],
+        "stats": {"hp": 40, "attack": 30, "defense": 40, "sp_attack": 70, "sp_defense": 60, "speed": 55},
+        "evolves_to": "独角兽",
+        "evolves_from": null,
+        "egg_group": "妖精",
+        "description": "可爱的小独角兽，散发着神秘的妖精光芒。"
+    },
+    {
+        "id": "NO.022",
+        "name": "独角兽",
+        "types": ["妖精系"],
+        "evolution_stage": "Ⅱ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.022_独角兽.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/独角兽",
+        "traits": ["魔法防御"],
+        "skills": [
+            {"name": "妖精之风", "type": "妖精系", "power": 40},
+            {"name": "魔法闪耀", "type": "妖精系", "power": 80},
+            {"name": "月亮之力", "type": "妖精系", "power": 95}
+        ],
+        "stats": {"hp": 60, "attack": 50, "defense": 60, "sp_attack": 90, "sp_defense": 80, "speed": 75},
+        "evolves_to": "圣光独角兽",
+        "evolves_from": "小独角兽",
+        "egg_group": "妖精",
+        "description": "小独角兽进化后的形态，妖精之力更加纯净。"
+    },
+    {
+        "id": "NO.023",
+        "name": "圣光独角兽",
+        "types": ["妖精系", "超能力系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.023_圣光独角兽.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/圣光独角兽",
+        "traits": ["魔法防御", "圣光庇护"],
+        "skills": [
+            {"name": "妖精之风", "type": "妖精系", "power": 40},
+            {"name": "魔法闪耀", "type": "妖精系", "power": 80},
+            {"name": "月亮之力", "type": "妖精系", "power": 95},
+            {"name": "精神强念", "type": "超能力系", "power": 90}
+        ],
+        "stats": {"hp": 85, "attack": 65, "defense": 80, "sp_attack": 120, "sp_defense": 110, "speed": 100},
+        "evolves_to": null,
+        "evolves_from": "独角兽",
+        "egg_group": "妖精",
+        "description": "独角兽的最终进化形态，圣光普照万物。"
+    },
+    {
+        "id": "NO.024",
+        "name": "小翼龙",
+        "types": ["龙系", "飞行系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.024_小翼龙.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/小翼龙",
+        "traits": ["龙之力"],
+        "skills": [
+            {"name": "龙之波动", "type": "龙系", "power": 85},
+            {"name": "空气斩", "type": "飞行系", "power": 75}
+        ],
+        "stats": {"hp": 45, "attack": 60, "defense": 45, "sp_attack": 55, "sp_defense": 45, "speed": 70},
+        "evolves_to": "翼龙",
+        "evolves_from": null,
+        "egg_group": "龙",
+        "description": "幼小的翼龙精灵，翅膀虽小但飞行速度极快。"
+    },
+    {
+        "id": "NO.025",
+        "name": "翼龙",
+        "types": ["龙系", "飞行系"],
+        "evolution_stage": "Ⅱ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.025_翼龙.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/翼龙",
+        "traits": ["龙之力"],
+        "skills": [
+            {"name": "龙之波动", "type": "龙系", "power": 85},
+            {"name": "空气斩", "type": "飞行系", "power": 75},
+            {"name": "龙爪", "type": "龙系", "power": 80}
+        ],
+        "stats": {"hp": 65, "attack": 85, "defense": 60, "sp_attack": 70, "sp_defense": 60, "speed": 95},
+        "evolves_to": "暴风翼龙",
+        "evolves_from": "小翼龙",
+        "egg_group": "龙",
+        "description": "小翼龙进化后的形态，翅膀变得强壮有力。"
+    },
+    {
+        "id": "NO.026",
+        "name": "暴风翼龙",
+        "types": ["龙系", "飞行系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.026_暴风翼龙.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/暴风翼龙",
+        "traits": ["龙之力", "风暴召唤"],
+        "skills": [
+            {"name": "龙之波动", "type": "龙系", "power": 85},
+            {"name": "空气斩", "type": "飞行系", "power": 75},
+            {"name": "龙爪", "type": "龙系", "power": 80},
+            {"name": "暴风", "type": "飞行系", "power": 110}
+        ],
+        "stats": {"hp": 85, "attack": 110, "defense": 75, "sp_attack": 90, "sp_defense": 75, "speed": 130},
+        "evolves_to": null,
+        "evolves_from": "翼龙",
+        "egg_group": "龙",
+        "description": "翼龙的最终进化形态，是天空中最强大的龙系精灵。"
+    },
+    {
+        "id": "NO.027",
+        "name": "小毒蛙",
+        "types": ["毒系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.027_小毒蛙.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/小毒蛙",
+        "traits": ["毒刺"],
+        "skills": [
+            {"name": "毒针", "type": "毒系", "power": 15},
+            {"name": "溶解液", "type": "毒系", "power": 40}
+        ],
+        "stats": {"hp": 40, "attack": 45, "defense": 40, "sp_attack": 55, "sp_defense": 45, "speed": 60},
+        "evolves_to": "毒蛙",
+        "evolves_from": null,
+        "egg_group": "水中1",
+        "description": "小巧的毒系精灵，皮肤分泌的毒液可麻痹敌人。"
+    },
+    {
+        "id": "NO.028",
+        "name": "毒蛙",
+        "types": ["毒系"],
+        "evolution_stage": "Ⅱ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.028_毒蛙.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/毒蛙",
+        "traits": ["毒刺"],
+        "skills": [
+            {"name": "毒针", "type": "毒系", "power": 15},
+            {"name": "溶解液", "type": "毒系", "power": 40},
+            {"name": "毒液冲击", "type": "毒系", "power": 65}
+        ],
+        "stats": {"hp": 60, "attack": 65, "defense": 55, "sp_attack": 75, "sp_defense": 60, "speed": 80},
+        "evolves_to": "毒王蛙",
+        "evolves_from": "小毒蛙",
+        "egg_group": "水中1",
+        "description": "小毒蛙进化后的形态，毒性大幅增强。"
+    },
+    {
+        "id": "NO.029",
+        "name": "毒王蛙",
+        "types": ["毒系", "格斗系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.029_毒王蛙.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/毒王蛙",
+        "traits": ["毒刺", "格斗之心"],
+        "skills": [
+            {"name": "毒针", "type": "毒系", "power": 15},
+            {"name": "溶解液", "type": "毒系", "power": 40},
+            {"name": "毒液冲击", "type": "毒系", "power": 65},
+            {"name": "近身战", "type": "格斗系", "power": 120}
+        ],
+        "stats": {"hp": 80, "attack": 105, "defense": 70, "sp_attack": 95, "sp_defense": 75, "speed": 110},
+        "evolves_to": null,
+        "evolves_from": "毒蛙",
+        "egg_group": "水中1",
+        "description": "毒蛙的最终进化形态，毒与格斗的完美结合。"
+    },
+    {
+        "id": "NO.030",
+        "name": "小甲虫",
+        "types": ["虫系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.030_小甲虫.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/小甲虫",
+        "traits": ["虫之预感"],
+        "skills": [
+            {"name": "虫咬", "type": "虫系", "power": 60},
+            {"name": "丝线射击", "type": "虫系", "power": 50}
+        ],
+        "stats": {"hp": 35, "attack": 40, "defense": 35, "sp_attack": 30, "sp_defense": 30, "speed": 45},
+        "evolves_to": "铠甲虫",
+        "evolves_from": null,
+        "egg_group": "虫",
+        "description": "小型虫系精灵，外壳坚硬但性格温和。"
+    },
+    {
+        "id": "NO.031",
+        "name": "铠甲虫",
+        "types": ["虫系", "钢系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.031_铠甲虫.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/铠甲虫",
+        "traits": ["虫之预感", "坚硬外壳"],
+        "skills": [
+            {"name": "虫咬", "type": "虫系", "power": 60},
+            {"name": "丝线射击", "type": "虫系", "power": 50},
+            {"name": "铁壁", "type": "钢系", "power": 0},
+            {"name": "十字剪", "type": "虫系", "power": 80}
+        ],
+        "stats": {"hp": 65, "attack": 90, "defense": 120, "sp_attack": 50, "sp_defense": 70, "speed": 40},
+        "evolves_to": null,
+        "evolves_from": "小甲虫",
+        "egg_group": "虫",
+        "description": "小甲虫进化后的形态，全身覆盖着钢铁般的铠甲。"
+    },
+    {
+        "id": "NO.032",
+        "name": "小磁怪",
+        "types": ["电系", "钢系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.032_小磁怪.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/小磁怪",
+        "traits": ["磁力"],
+        "skills": [
+            {"name": "电击", "type": "电系", "power": 40},
+            {"name": "磁铁炸弹", "type": "钢系", "power": 60}
+        ],
+        "stats": {"hp": 25, "attack": 35, "defense": 70, "sp_attack": 95, "sp_defense": 55, "speed": 45},
+        "evolves_to": "三合一磁怪",
+        "evolves_from": null,
+        "egg_group": "矿物",
+        "description": "由磁力构成的精灵，悬浮在空中吸收电力。"
+    },
+    {
+        "id": "NO.033",
+        "name": "三合一磁怪",
+        "types": ["电系", "钢系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.033_三合一磁怪.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/三合一磁怪",
+        "traits": ["磁力", "分析"],
+        "skills": [
+            {"name": "电击", "type": "电系", "power": 40},
+            {"name": "磁铁炸弹", "type": "钢系", "power": 60},
+            {"name": "十万伏特", "type": "电系", "power": 90},
+            {"name": "电磁炮", "type": "电系", "power": 120}
+        ],
+        "stats": {"hp": 50, "attack": 60, "defense": 95, "sp_attack": 120, "sp_defense": 70, "speed": 70},
+        "evolves_to": null,
+        "evolves_from": "小磁怪",
+        "egg_group": "矿物",
+        "description": "小磁怪进化后的形态，三个磁怪合为一体，磁力倍增。"
+    },
+    {
+        "id": "NO.034",
+        "name": "小地鼠",
+        "types": ["地面系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.034_小地鼠.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/小地鼠",
+        "traits": ["沙隐"],
+        "skills": [
+            {"name": "挖洞", "type": "地面系", "power": 80},
+            {"name": "泥巴射击", "type": "地面系", "power": 55}
+        ],
+        "stats": {"hp": 30, "attack": 55, "defense": 35, "sp_attack": 30, "sp_defense": 35, "speed": 70},
+        "evolves_to": "大地鼠",
+        "evolves_from": null,
+        "egg_group": "陆上",
+        "description": "喜欢挖洞的地面系精灵，在地下建造了庞大的巢穴。"
+    },
+    {
+        "id": "NO.035",
+        "name": "大地鼠",
+        "types": ["地面系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.035_大地鼠.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/大地鼠",
+        "traits": ["沙隐", "沙之力"],
+        "skills": [
+            {"name": "挖洞", "type": "地面系", "power": 80},
+            {"name": "泥巴射击", "type": "地面系", "power": 55},
+            {"name": "地震", "type": "地面系", "power": 100},
+            {"name": "大地之力", "type": "地面系", "power": 90}
+        ],
+        "stats": {"hp": 70, "attack": 100, "defense": 70, "sp_attack": 60, "sp_defense": 65, "speed": 110},
+        "evolves_to": null,
+        "evolves_from": "小地鼠",
+        "egg_group": "陆上",
+        "description": "小地鼠的最终进化形态，能引发强烈地震。"
+    },
+    {
+        "id": "NO.036",
+        "name": "小云雀",
+        "types": ["一般系", "飞行系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.036_小云雀.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/小云雀",
+        "traits": ["锐利目光"],
+        "skills": [
+            {"name": "啄击", "type": "飞行系", "power": 35},
+            {"name": "电光一闪", "type": "一般系", "power": 40}
+        ],
+        "stats": {"hp": 35, "attack": 45, "defense": 30, "sp_attack": 30, "sp_defense": 30, "speed": 70},
+        "evolves_to": "云雀",
+        "evolves_from": null,
+        "egg_group": "飞行",
+        "description": "小巧的飞行精灵，喜欢在蓝天白云间自由翱翔。"
+    },
+    {
+        "id": "NO.037",
+        "name": "云雀",
+        "types": ["一般系", "飞行系"],
+        "evolution_stage": "Ⅱ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.037_云雀.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/云雀",
+        "traits": ["锐利目光"],
+        "skills": [
+            {"name": "啄击", "type": "飞行系", "power": 35},
+            {"name": "电光一闪", "type": "一般系", "power": 40},
+            {"name": "空气斩", "type": "飞行系", "power": 75}
+        ],
+        "stats": {"hp": 55, "attack": 65, "defense": 45, "sp_attack": 45, "sp_defense": 45, "speed": 90},
+        "evolves_to": "风暴云雀",
+        "evolves_from": "小云雀",
+        "egg_group": "飞行",
+        "description": "小云雀进化后的形态，飞行速度大幅提升。"
+    },
+    {
+        "id": "NO.038",
+        "name": "风暴云雀",
+        "types": ["一般系", "飞行系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.038_风暴云雀.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/风暴云雀",
+        "traits": ["锐利目光", "风暴召唤"],
+        "skills": [
+            {"name": "啄击", "type": "飞行系", "power": 35},
+            {"name": "电光一闪", "type": "一般系", "power": 40},
+            {"name": "空气斩", "type": "飞行系", "power": 75},
+            {"name": "暴风", "type": "飞行系", "power": 110}
+        ],
+        "stats": {"hp": 75, "attack": 90, "defense": 65, "sp_attack": 70, "sp_defense": 65, "speed": 125},
+        "evolves_to": null,
+        "evolves_from": "云雀",
+        "egg_group": "飞行",
+        "description": "云雀的最终进化形态，翅膀能掀起猛烈风暴。"
+    },
+    {
+        "id": "NO.039",
+        "name": "小拳石",
+        "types": ["岩石系", "地面系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.039_小拳石.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/小拳石",
+        "traits": ["结实"],
+        "skills": [
+            {"name": "岩石封锁", "type": "岩石系", "power": 60},
+            {"name": "泥巴射击", "type": "地面系", "power": 55}
+        ],
+        "stats": {"hp": 40, "attack": 80, "defense": 100, "sp_attack": 30, "sp_defense": 30, "speed": 20},
+        "evolves_to": "隆隆石",
+        "evolves_from": null,
+        "egg_group": "矿物",
+        "description": "圆滚滚的岩石精灵，喜欢从山坡上滚下来。"
+    },
+    {
+        "id": "NO.040",
+        "name": "隆隆石",
+        "types": ["岩石系", "地面系"],
+        "evolution_stage": "Ⅱ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.040_隆隆石.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/隆隆石",
+        "traits": ["结实"],
+        "skills": [
+            {"name": "岩石封锁", "type": "岩石系", "power": 60},
+            {"name": "泥巴射击", "type": "地面系", "power": 55},
+            {"name": "地震", "type": "地面系", "power": 100}
+        ],
+        "stats": {"hp": 55, "attack": 95, "defense": 115, "sp_attack": 45, "sp_defense": 45, "speed": 35},
+        "evolves_to": "隆隆岩",
+        "evolves_from": "小拳石",
+        "egg_group": "矿物",
+        "description": "小拳石进化后的形态，身体更加坚硬巨大。"
+    },
+    {
+        "id": "NO.041",
+        "name": "隆隆岩",
+        "types": ["岩石系", "地面系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.041_隆隆岩.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/隆隆岩",
+        "traits": ["结实", "石脑"],
+        "skills": [
+            {"name": "岩石封锁", "type": "岩石系", "power": 60},
+            {"name": "泥巴射击", "type": "地面系", "power": 55},
+            {"name": "地震", "type": "地面系", "power": 100},
+            {"name": "岩崩", "type": "岩石系", "power": 75}
+        ],
+        "stats": {"hp": 80, "attack": 120, "defense": 130, "sp_attack": 55, "sp_defense": 65, "speed": 45},
+        "evolves_to": null,
+        "evolves_from": "隆隆石",
+        "egg_group": "矿物",
+        "description": "隆隆石的最终进化形态，是一座移动的岩石山。"
+    },
+    {
+        "id": "NO.042",
+        "name": "小蘑菇",
+        "types": ["草系", "毒系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.042_小蘑菇.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/小蘑菇",
+        "traits": ["孢子"],
+        "skills": [
+            {"name": "藤鞭", "type": "草系", "power": 45},
+            {"name": "毒粉", "type": "毒系", "power": 0}
+        ],
+        "stats": {"hp": 45, "attack": 40, "defense": 50, "sp_attack": 55, "sp_defense": 55, "speed": 30},
+        "evolves_to": "毒蘑菇",
+        "evolves_from": null,
+        "egg_group": "植物",
+        "description": "生长在阴暗森林中的蘑菇精灵，会释放催眠孢子。"
+    },
+    {
+        "id": "NO.043",
+        "name": "毒蘑菇",
+        "types": ["草系", "毒系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.043_毒蘑菇.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/毒蘑菇",
+        "traits": ["孢子", "毒疗"],
+        "skills": [
+            {"name": "藤鞭", "type": "草系", "power": 45},
+            {"name": "毒粉", "type": "毒系", "power": 0},
+            {"name": "溶解液", "type": "毒系", "power": 40},
+            {"name": "花瓣舞", "type": "草系", "power": 90}
+        ],
+        "stats": {"hp": 70, "attack": 60, "defense": 75, "sp_attack": 90, "sp_defense": 85, "speed": 50},
+        "evolves_to": null,
+        "evolves_from": "小蘑菇",
+        "egg_group": "植物",
+        "description": "小蘑菇的最终进化形态，毒性极强但外表可爱。"
+    },
+    {
+        "id": "NO.044",
+        "name": "小海马",
+        "types": ["水系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.044_小海马.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/小海马",
+        "traits": ["悠游自如"],
+        "skills": [
+            {"name": "水枪", "type": "水系", "power": 40},
+            {"name": "泡沫光线", "type": "水系", "power": 65}
+        ],
+        "stats": {"hp": 30, "attack": 40, "defense": 50, "sp_attack": 60, "sp_defense": 45, "speed": 55},
+        "evolves_to": "海马龙",
+        "evolves_from": null,
+        "egg_group": "水中1",
+        "description": "生活在浅海的小海马精灵，擅长喷射水流。"
+    },
+    {
+        "id": "NO.045",
+        "name": "海马龙",
+        "types": ["水系", "龙系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.045_海马龙.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/海马龙",
+        "traits": ["悠游自如", "龙之力"],
+        "skills": [
+            {"name": "水枪", "type": "水系", "power": 40},
+            {"name": "泡沫光线", "type": "水系", "power": 65},
+            {"name": "水炮", "type": "水系", "power": 110},
+            {"name": "龙之波动", "type": "龙系", "power": 85}
+        ],
+        "stats": {"hp": 65, "attack": 75, "defense": 85, "sp_attack": 100, "sp_defense": 80, "speed": 85},
+        "evolves_to": null,
+        "evolves_from": "小海马",
+        "egg_group": "水中1",
+        "description": "小海马的最终进化形态，融合了水系与龙系的力量。"
+    },
+    {
+        "id": "NO.046",
+        "name": "小格斗家",
+        "types": ["格斗系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.046_小格斗家.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/小格斗家",
+        "traits": ["格斗之心"],
+        "skills": [
+            {"name": "空手劈", "type": "格斗系", "power": 50},
+            {"name": "近身战", "type": "格斗系", "power": 120}
+        ],
+        "stats": {"hp": 40, "attack": 70, "defense": 40, "sp_attack": 30, "sp_defense": 35, "speed": 60},
+        "evolves_to": "格斗大师",
+        "evolves_from": null,
+        "egg_group": "人形",
+        "description": "热爱格斗的小精灵，每天都在刻苦训练。"
+    },
+    {
+        "id": "NO.047",
+        "name": "格斗大师",
+        "types": ["格斗系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.047_格斗大师.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/格斗大师",
+        "traits": ["格斗之心", "不屈之心"],
+        "skills": [
+            {"name": "空手劈", "type": "格斗系", "power": 50},
+            {"name": "近身战", "type": "格斗系", "power": 120},
+            {"name": "飞膝踢", "type": "格斗系", "power": 130},
+            {"name": "真气拳", "type": "格斗系", "power": 150}
+        ],
+        "stats": {"hp": 75, "attack": 130, "defense": 70, "sp_attack": 50, "sp_defense": 65, "speed": 100},
+        "evolves_to": null,
+        "evolves_from": "小格斗家",
+        "egg_group": "人形",
+        "description": "小格斗家的最终进化形态，拳法已臻化境。"
+    },
+    {
+        "id": "NO.048",
+        "name": "小钢甲",
+        "types": ["钢系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.048_小钢甲.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/小钢甲",
+        "traits": ["坚硬外壳"],
+        "skills": [
+            {"name": "铁壁", "type": "钢系", "power": 0},
+            {"name": "铁头", "type": "钢系", "power": 80}
+        ],
+        "stats": {"hp": 45, "attack": 55, "defense": 100, "sp_attack": 30, "sp_defense": 60, "speed": 25},
+        "evolves_to": "钢甲龙",
+        "evolves_from": null,
+        "egg_group": "矿物",
+        "description": "全身覆盖钢铁铠甲的小精灵，防御力极高。"
+    },
+    {
+        "id": "NO.049",
+        "name": "钢甲龙",
+        "types": ["钢系", "龙系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.049_钢甲龙.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/钢甲龙",
+        "traits": ["坚硬外壳", "龙之力"],
+        "skills": [
+            {"name": "铁壁", "type": "钢系", "power": 0},
+            {"name": "铁头", "type": "钢系", "power": 80},
+            {"name": "龙爪", "type": "龙系", "power": 80},
+            {"name": "铁尾", "type": "钢系", "power": 100}
+        ],
+        "stats": {"hp": 80, "attack": 110, "defense": 140, "sp_attack": 60, "sp_defense": 90, "speed": 50},
+        "evolves_to": null,
+        "evolves_from": "小钢甲",
+        "egg_group": "矿物",
+        "description": "小钢甲的最终进化形态，钢铁与龙之力的完美结合。"
+    },
+    {
+        "id": "NO.050",
+        "name": "小恶魔",
+        "types": ["恶系"],
+        "evolution_stage": "Ⅰ阶",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.050_小恶魔.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/小恶魔",
+        "traits": ["恶作剧之心"],
+        "skills": [
+            {"name": "暗算", "type": "恶系", "power": 60},
+            {"name": "恶之波动", "type": "恶系", "power": 80}
+        ],
+        "stats": {"hp": 35, "attack": 55, "defense": 35, "sp_attack": 60, "sp_defense": 40, "speed": 65},
+        "evolves_to": "恶魔使者",
+        "evolves_from": null,
+        "egg_group": "不定形",
+        "description": "调皮捣蛋的恶系精灵，喜欢恶作剧但本性不坏。"
+    },
+    {
+        "id": "NO.051",
+        "name": "恶魔使者",
+        "types": ["恶系", "幽灵系"],
+        "evolution_stage": "最终形态",
+        "form": "原始形态",
+        "image_url": "https://lokewangguoshijie.com/pokemon/NO.051_恶魔使者.webp",
+        "detail_url": "https://wiki.biligame.com/rocom/恶魔使者",
+        "traits": ["恶作剧之心", "诅咒身躯"],
+        "skills": [
+            {"name": "暗算", "type": "恶系", "power": 60},
+            {"name": "恶之波动", "type": "恶系", "power": 80},
+            {"name": "暗影球", "type": "幽灵系", "power": 80},
+            {"name": "暗影爪", "type": "幽灵系", "power": 70}
+        ],
+        "stats": {"hp": 70, "attack": 90, "defense": 65, "sp_attack": 110, "sp_defense": 75, "speed": 110},
+        "evolves_to": null,
+        "evolves_from": "小恶魔",
+        "egg_group": "不定形",
+        "description": "小恶魔的最终进化形态，掌控暗影与邪恶之力。"
+    }
+]

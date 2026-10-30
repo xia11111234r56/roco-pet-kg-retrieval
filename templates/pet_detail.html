@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pet.name }} - 洛克王国精灵详情</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            background:
+                radial-gradient(ellipse at 20% 20%, rgba(59,130,246,0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 60%, rgba(168,85,247,0.08) 0%, transparent 50%),
+                #0a1628;
+            color: #e2e8f0;
+            min-height: 100vh;
+        }
+        .detail-page-header {
+            background: linear-gradient(180deg, #0f2746 0%, #162d50 40%, #0b1a30 100%);
+            border-bottom: 2px solid rgba(234,179,8,0.3);
+            padding: 18px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+        }
+        .detail-back-btn {
+            background: rgba(59,130,246,0.15);
+            color: #93c5fd;
+            border: 1px solid rgba(59,130,246,0.25);
+            padding: 8px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .detail-back-btn:hover { background: rgba(59,130,246,0.25); color: #bfdbfe; }
+        .detail-header-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #f1f5f9;
+            letter-spacing: 1px;
+        }
+        .detail-main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 24px;
+        }
+        .detail-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .detail-card {
+            background: rgba(22, 45, 80, 0.85);
+            border-radius: 14px;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.08);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            backdrop-filter: blur(4px);
+        }
+        .detail-pet-img-wrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+        .detail-pet-img {
+            width: 140px;
+            height: 140px;
+            object-fit: contain;
+            border-radius: 16px;
+            background: rgba(18, 37, 69, 0.72);
+            border: 2px solid rgba(59,130,246,0.3);
+        }
+        .detail-pet-name {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: #f1f5f9;
+            text-align: center;
+            margin-bottom: 4px;
+        }
+        .detail-pet-id {
+            font-size: 0.8rem;
+            color: #64748b;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .detail-pet-types {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .detail-type-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 5px 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        .detail-type-tag img { width: 18px; height: 18px; object-fit: contain; border-radius: 3px; }
+        .detail-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-top: 12px;
+        }
+        .detail-stat-item {
+            text-align: center;
+            padding: 10px 6px;
+            background: rgba(59,130,246,0.08);
+            border-radius: 10px;
+        }
+        .detail-stat-val {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #60a5fa;
+        }
+        .detail-stat-label {
+            font-size: 0.7rem;
+            color: #64748b;
+            margin-top: 2px;
+        }
+        .detail-stat-bar {
+            height: 4px;
+            background: rgba(59,130,246,0.15);
+            border-radius: 2px;
+            margin-top: 6px;
+            overflow: hidden;
+        }
+        .detail-stat-bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #3b82f6, #60a5fa);
+            border-radius: 2px;
+        }
+        .detail-content { display: flex; flex-direction: column; gap: 16px; }
+        .detail-section {
+            background: rgba(22, 45, 80, 0.85);
+            border-radius: 14px;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.08);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            backdrop-filter: blur(4px);
+        }
+        .detail-section-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #93c5fd;
+            margin-bottom: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(59,130,246,0.15);
+        }
+        .detail-ability-name {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fbbf24;
+            margin-bottom: 6px;
+        }
+        .detail-ability-desc {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .detail-relation-row {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .detail-relation-item {
+            flex: 1;
+            min-width: 200px;
+            background: rgba(18, 37, 69, 0.68);
+            border-radius: 10px;
+            padding: 14px;
+        }
+        .detail-relation-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #64748b;
+            margin-bottom: 8px;
+        }
+        .detail-relation-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        .detail-relation-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        .detail-relation-tag img { width: 14px; height: 14px; object-fit: contain; border-radius: 2px; }
+        .tag-restrain { background: rgba(248,113,113,0.2); color: #fca5a5; border: 1px solid rgba(248,113,113,0.25); }
+        .tag-restrained { background: rgba(96,165,250,0.2); color: #93c5fd; border: 1px solid rgba(96,165,250,0.25); }
+        .tag-resist { background: rgba(74,222,128,0.2); color: #86efac; border: 1px solid rgba(74,222,128,0.25); }
+        .tag-resisted-by { background: rgba(251,191,36,0.2); color: #fcd34d; border: 1px solid rgba(251,191,36,0.25); }
+        .detail-evo-chain {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            padding: 8px 0;
+        }
+        .detail-evo-item {
+            text-align: center;
+            padding: 10px 16px;
+            background: rgba(18, 37, 69, 0.68);
+            border-radius: 10px;
+            border: 1px solid rgba(59,130,246,0.2);
+        }
+        .detail-evo-name {
+            font-weight: 700;
+            color: #e2e8f0;
+            font-size: 0.9rem;
+        }
+        .detail-evo-level {
+            font-size: 0.75rem;
+            color: #64748b;
+            margin-top: 2px;
+        }
+        .detail-evo-arrow {
+            color: #60a5fa;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        .detail-skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .detail-skill-tag {
+            padding: 5px 12px;
+            background: rgba(59,130,246,0.12);
+            border-radius: 8px;
+            font-size: 0.82rem;
+            color: #cbd5e0;
+            border: 1px solid rgba(59,130,246,0.1);
+        }
+        .detail-skill-tag.blood { border-color: rgba(248,113,113,0.3); background: rgba(248,113,113,0.1); color: #fca5a5; }
+        .detail-skill-tag.stone { border-color: rgba(251,191,36,0.3); background: rgba(251,191,36,0.1); color: #fcd34d; }
+        .detail-info-row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .detail-info-chip {
+            background: rgba(18, 37, 69, 0.68);
+            border-radius: 8px;
+            padding: 10px 16px;
+            text-align: center;
+            min-width: 80px;
+        }
+        .detail-info-chip-val {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #60a5fa;
+        }
+        .detail-info-chip-label {
+            font-size: 0.7rem;
+            color: #64748b;
+            margin-top: 2px;
+        }
+        @media (max-width: 768px) {
+            .detail-main { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header class="detail-page-header">
+        <a href="/" class="detail-back-btn">← 返回检索系统</a>
+        <span class="detail-header-title">{{ pet.name }} · 精灵详情</span>
+        <span style="color:#64748b;font-size:0.8rem;">洛克王国</span>
+    </header>
+
+    <div class="detail-main">
+        <div class="detail-sidebar">
+            <div class="detail-card">
+                <div class="detail-pet-img-wrap">
+                    {% if pet.image_url %}
+                    <img class="detail-pet-img" src="{{ pet.image_url }}" alt="{{ pet.name }}">
+                    {% endif %}
+                </div>
+                <div class="detail-pet-name">{{ pet.name }}</div>
+                <div class="detail-pet-id">{{ pet.id or '' }}</div>
+                <div class="detail-pet-types">
+                    {% for t in pet.types %}
+                    <span class="detail-type-tag" style="background:{{ TYPE_COLORS.get(t, '#718096') }}">
+                        <img src="{{ TYPE_ICON_URLS.get(t, '') }}" alt="{{ t }}">{{ t }}
+                    </span>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="detail-card">
+                <div class="detail-section-title">基础属性</div>
+                {% set stats = [
+                    ('HP', detail.hp, 200),
+                    ('攻击', detail.attack, 200),
+                    ('魔攻', detail.magic_attack, 200),
+                    ('防御', detail.defense, 200),
+                    ('魔防', detail.magic_defense, 200),
+                    ('速度', detail.speed, 200)
+                ] %}
+                {% for label, val, max_val in stats %}
+                {% set pct = (val|int / max_val * 100) if val and val|int > 0 else 0 %}
+                <div style="margin-bottom:10px;">
+                    <div style="display:flex;justify-content:space-between;margin-bottom:3px;">
+                        <span style="font-size:0.8rem;color:#94a3b8;">{{ label }}</span>
+                        <span style="font-size:0.8rem;font-weight:700;color:#e2e8f0;">{{ val or '-' }}</span>
+                    </div>
+                    <div class="detail-stat-bar">
+                        <div class="detail-stat-bar-fill" style="width:{{ pct }}%"></div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            {% if detail.can_evolve == '是' or detail.base_form or detail.evolve_form_1 or detail.evolve_form_2 %}
+            <div class="detail-card">
+                <div class="detail-section-title">进化链</div>
+                {% set evo_parts = [] %}
+                {% if detail.base_form and detail.base_form != pet.name %}{% set _ = evo_parts.append(detail.base_form) %}{% endif %}
+                {% set _ = evo_parts.append(pet.name) %}
+                {% if detail.evolve_form_1 and detail.evolve_form_1 != pet.name %}{% set _ = evo_parts.append(detail.evolve_form_1) %}{% endif %}
+                {% if detail.evolve_form_2 and detail.evolve_form_2 != pet.name and detail.evolve_form_2 != detail.evolve_form_1 %}{% set _ = evo_parts.append(detail.evolve_form_2) %}{% endif %}
+                <div class="detail-evo-chain">
+                    {% for ep in evo_parts %}
+                    {% if not loop.first %}<span class="detail-evo-arrow">→</span>{% endif %}
+                    <div class="detail-evo-item">
+                        <div class="detail-evo-name">{{ ep }}</div>
+                        {% if detail.can_evolve == '是' %}
+                        {% if loop.index == 2 and detail.evolve_level_1 %}
+                        <div class="detail-evo-level">Lv.{{ detail.evolve_level_1 }}</div>
+                        {% elif loop.index == 3 and detail.evolve_level_2 %}
+                        <div class="detail-evo-level">Lv.{{ detail.evolve_level_2 }}</div>
+                        {% endif %}
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="detail-content">
+            {% if detail.ability_name %}
+            <div class="detail-section">
+                <div class="detail-section-title">特性</div>
+                <div class="detail-ability-name">{{ detail.ability_name }}</div>
+                <div class="detail-ability-desc">{{ detail.ability_desc or '暂无描述' }}</div>
+            </div>
+            {% endif %}
+
+            {% if detail.restrain or detail.restrained_by or detail.resistance or detail.resisted_by %}
+            <div class="detail-section">
+                <div class="detail-section-title">属性克制关系</div>
+                <div class="detail-relation-row">
+                    {% if detail.restrain %}
+                    <div class="detail-relation-item">
+                        <div class="detail-relation-label">克制</div>
+                        <div class="detail-relation-tags">
+                            {% for t in detail.restrain %}
+                            <span class="detail-relation-tag tag-restrain">{{ t }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if detail.restrained_by %}
+                    <div class="detail-relation-item">
+                        <div class="detail-relation-label">被克制</div>
+                        <div class="detail-relation-tags">
+                            {% for t in detail.restrained_by %}
+                            <span class="detail-relation-tag tag-restrained">{{ t }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if detail.resistance %}
+                    <div class="detail-relation-item">
+                        <div class="detail-relation-label">抵抗</div>
+                        <div class="detail-relation-tags">
+                            {% for t in detail.resistance %}
+                            <span class="detail-relation-tag tag-resist">{{ t }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if detail.resisted_by %}
+                    <div class="detail-relation-item">
+                        <div class="detail-relation-label">被抵抗</div>
+                        <div class="detail-relation-tags">
+                            {% for t in detail.resisted_by %}
+                            <span class="detail-relation-tag tag-resisted-by">{{ t }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if detail.blood_skill_count or detail.skill_stone_count or detail.learnable_skill_count %}
+            <div class="detail-section">
+                <div class="detail-section-title">技能统计</div>
+                <div class="detail-info-row">
+                    {% if detail.blood_skill_count %}
+                    <div class="detail-info-chip">
+                        <div class="detail-info-chip-val">{{ detail.blood_skill_count }}</div>
+                        <div class="detail-info-chip-label">血脉技能</div>
+                    </div>
+                    {% endif %}
+                    {% if detail.skill_stone_count %}
+                    <div class="detail-info-chip">
+                        <div class="detail-info-chip-val">{{ detail.skill_stone_count }}</div>
+                        <div class="detail-info-chip-label">技能石</div>
+                    </div>
+                    {% endif %}
+                    {% if detail.learnable_skill_count %}
+                    <div class="detail-info-chip">
+                        <div class="detail-info-chip-val">{{ detail.learnable_skill_count }}</div>
+                        <div class="detail-info-chip-label">可学技能</div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if detail.blood_skill_list %}
+            <div class="detail-section">
+                <div class="detail-section-title">血脉技能</div>
+                <div class="detail-skill-list">
+                    {% for s in detail.blood_skill_list %}
+                    <span class="detail-skill-tag blood">{{ s }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if detail.skill_stone_list %}
+            <div class="detail-section">
+                <div class="detail-section-title">技能石</div>
+                <div class="detail-skill-list">
+                    {% for s in detail.skill_stone_list %}
+                    <span class="detail-skill-tag stone">{{ s }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            {% if detail.skill_list %}
+            <div class="detail-section">
+                <div class="detail-section-title">可学技能(共{{ detail.skill_list|length }}个)</div>
+                <div class="detail-skill-list">
+                    {% for s in detail.skill_list %}
+                    <span class="detail-skill-tag">{{ s }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
